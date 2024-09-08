@@ -49,7 +49,7 @@ app.post('/api/login', (req, res) => {
     return res.status(401).send('Invalid credentials');
   }
   
-  res.send('Login successful');
+  res.send('Login successfully');
 });
 
  
