@@ -51,7 +51,7 @@ const App = () => {
       setData(result.data);
       setFilteredData(result.data); // Initialize with all data
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching data is:', error);
     }
   };
 
