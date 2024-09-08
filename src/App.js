@@ -70,6 +70,15 @@ const App = () => {
     setFilteredData(newData);
   };
 
+  // const handleSort = (e) => {
+  //   const sortValue = e.target.value;
+  //   setSortOption(sortValue);
+  //   const sortedData = {
+  //     ...filteredData,
+  //     lineChart: [...filteredData.lineChart].sort((a, b) => sortValue === 'asc' ? a.value - b.value : b.value - a.value),
+  //   };
+  //   setFilteredData(sortedData);
+  // };
   const handleSort = (e) => {
     const sortValue = e.target.value;
     setSortOption(sortValue);
@@ -87,7 +96,7 @@ const App = () => {
         <h2 className="text-center mb-4">Login</h2>
         <input
           type="text"
-          className="form-control mb-3"
+          className="form-control mb-2"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -100,7 +109,7 @@ const App = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
-          className="btn btn-primary w-100"
+          className="btn btn-primary w-102"
           onClick={handleLogin}
         >
           Login
